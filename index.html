@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-info">
+        <a href="index.html" class="navbar-brand">VRL Logistics Ltd</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid input">
+        <div class="row input-row">
+                <div class="col-sm-6">
+                    Employee Code
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" id="ecode">
+                </div>
+                <div class="col-sm-6">
+                    Name
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" id="name">
+                </div>
+                <div class="col-sm-6">
+                    Designation
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" id="designation" onKeyPress="if(this.value.length===25) return false;">
+                </div>
+                <div class="col-sm-6">
+                    Aadhaar Number
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" id="aadhaar" onKeyPress="if(this.value.length===12) return false;">
+                </div>
+                <div class="col-sm-6">
+                    Department
+                </div>
+                <div class="col-sm-6">
+                    <select id="department">
+                        <option value='Admin'>Admin</option>
+                        <option value='Traffic'>Traffic</option>
+                        <option value="Operation">Operation</option>
+                    </select>
+                </div>
+                <div class="col-sm-6">
+                    Branch Name
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" id="branch-name">
+                </div>
+                <div class="col-sm-6">
+                    Branch Address
+                </div>
+                <div class="col-sm-6">
+                    <textarea id="branch-address" maxlength="50"></textarea>
+                </div>
+                <div class="col-sm-6">
+                    Blood Group
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" id="blood" maxlength="13">
+                </div>
+                <div class="col-sm-6">
+                    Date Of Birth
+                </div>
+                <div class="col-sm-6">
+                    <input type="date" id="dob">
+                </div>
+                <div class="col-sm-6">
+                    Date Of Joining
+                </div>
+                <div class="col-sm-6">
+                    <input type="date" id="doi">
+                </div>
+                <div class="col-sm-6">
+                    Residential Address
+                </div>
+                <div class="col-sm-6">
+                    <textarea id="resadd" maxlength="50"></textarea>
+                </div>
+                <div class="col-sm-6">
+                    Mobile Number
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" id="mobile" onKeyPress="if(this.value.length===10) return false;">
+                </div>
+                <div class="col-sm-6">
+                    E-mail ID
+                </div>
+                <div class="col-sm-6">
+                    <input type="e-mail" id="email" required>
+                </div>
+                <div class="col-sm-6">
+                    Photo
+                </div>
+                <div class="col-sm-6">
+                    <input type="file" id="photo">
+                </div>
+
+                <div class="col">
+                    <button type="submit" class="btn btn-outline-success">Submit</button>
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Outer Container -->
+    <div class="container-fluid output">
+        <!-- Main Row -->
+        <div class="row start">
+            <div class="col-sm-4 center-section">
+                <!-- Logo and ID -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="images/vrl.PNG" alt="VRL LOGO" class="logo-img">
+                    </div>
+                    <div class="col-sm-12">
+                        <img src="" alt="User" id="image" class="user-img">
+                    </div>
+                    <div class="col-sm-12 sign">
+                        <p>Authorised Signature</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col-sm-12 center-section">
+                    <h1>VRL LOGISTICS LTD</h1>
+                    <p class="address">An ISO 9001:2000 CERTIFIED COMPANY</p>
+                    <p class="address">Regd. & Admn. Office: VRL Complex, Bangalore Road,</p>
+                    <p class="address">17th KM. Varur - HUBLI</p>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            EMP ID
+                        </div>
+                        <div class="col-sm-6 ecode">
+                        </div>
+                        <div class="col-sm-6">
+                            Name
+                        </div>
+                        <div class="col-sm-6 name">
+                        </div>
+                        <div class="col-sm-6">
+                            Designation
+                        </div>
+                        <div class="col-sm-6 designation">
+
+                        </div>
+                        <div class="col-sm-6">
+                            Aadhaar
+                        </div>
+                        <div class="col-sm-6 aadhaar">
+
+                        </div>
+                        <div class="col-sm-6">
+                            Department
+                        </div>
+                        <div class="col-sm-6 department">
+
+                        </div>
+                        <div class="col-sm-6">
+                            Branch Name
+                        </div>
+                        <div class="col-sm-6 branch-name">
+
+                        </div>
+                        <div class="col-sm-6">
+                            Branch Address
+                        </div>
+                        <div class="col-sm-6 branch-address">
+
+                        </div>
+                        <div class="col-sm-6">
+                            Date Of Birth
+                        </div>
+                        <div class="col-sm-6 dob">
+
+                        </div>
+                        <div class="col-sm-6">
+                            Blood Group
+                        </div>
+                        <div class="col-sm-6 blood">
+
+                        </div>
+                        <div class="col-sm-6">
+                            Date Of Joining
+                        </div>
+                        <div class="col-sm-6 doi">
+
+                        </div>
+                        <div class="col-sm-6">
+                            Residential Address
+                        </div>
+                        <div class="col-sm-6 resadd">
+
+                        </div>
+                        <div class="col-sm-6">
+                            Mobile Number
+                        </div>
+                        <div class="col-sm-6 mobile">
+
+                        </div>
+                        <div class="col-sm-6">
+                            E-mail Id
+                        </div>
+                        <div class="col-sm-6 email">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
