@@ -96,7 +96,7 @@
                     Mobile Number
                 </div>
                 <div class="col-sm-6">
-                    <input type="number" id="mobile" onKeydown="if(this.value.length===10) return false;">
+                    <input type="number" id="mobile" onkeydown="if(this.value.length===10) return false;">
                 </div>
                 <div class="col-sm-6">
                     E-mail ID
@@ -129,9 +129,9 @@
     <div class="container-fluid output">
         <!-- Main Row -->
         <div class="row start">
-            <div class="col-sm-4 center-section">
+            <div class="col-sm-1 pad-section">
                 <!-- Logo and ID -->
-                <div class="row">
+                <div class="row m-0-1">
                     <div class="col-sm-12">
                         <img src="images/vrl.PNG" alt="VRL LOGO" class="logo-img">
                     </div>
@@ -139,19 +139,22 @@
                         <img src="" alt="User" id="image" class="user-img">
                     </div>
                     <div class="col-sm-12 sign">
-                        <p>Authorised Signature</p>
+                        <p class="text-nowrap">Authorised Signature</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="col-sm-12 center-section">
+                <div class="col-sm-6 center-section">
                     <h1>VRL LOGISTICS LTD</h1>
                     <p class="address">An ISO 9001:2000 CERTIFIED COMPANY</p>
                     <p class="address">Regd. & Admn. Office: VRL Complex, Bangalore Road,</p>
                     <p class="address">17th KM. Varur - HUBLI</p>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                     <div class="row">
+                        <div class="col-sm-12 idcard">
+                            IDENTITY CARD
+                        </div>
                         <div class="col-sm-6">
                             EMP ID
                         </div>
