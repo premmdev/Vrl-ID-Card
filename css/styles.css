@@ -44,8 +44,9 @@ p{
     font-size: 10px;
 }
 
-input,select{
+input,select,textarea{
     margin-bottom: 9px;
+    border: 1px solid;
 }
 
 .input-row .col-sm-6{
