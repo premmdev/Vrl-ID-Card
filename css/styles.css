@@ -79,3 +79,9 @@ input[type=number] {
         display: none;
     }
 }
+
+@media (min-width: 500px){
+    .print{
+        display: none;
+    }
+}
