@@ -80,8 +80,4 @@ input[type=number] {
     }
 }
 
-@media (min-width: 500px){
-    .print{
-        display: none;
-    }
-}
+
